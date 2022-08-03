@@ -1,50 +1,8 @@
-.marquee {
-  width: 100%;
-  max-width: 100%;
-  height: 70px;
-  margin: 0 auto;
-  white-space: nowrap;
-  overflow: hidden;
-  border: 1px solid #f00;
-  background: GhostWhite;
+.color-count {
+  font-size: 2rem;
+  color: #ff000f;
+}
+
+#count-number {
   color: #000;
-  font-size: 20px;
-}
-.b-slider.marquee-slider {
-  display: flex;
-  flex-direction: row;
-  align-content: center;
-  justify-content: center;
-}
-.b-slider__slide {
-  margin: 0 50px;
-  display: flex;
-  flex-direction: row;
-  align-content: center;
-  justify-content: center;
-}
-.marquee .marquee-jjj {
-  display: flex;
-  padding-left: 0%;
-  animation: marquee 20s linear infinite;
-  cursor: default;
-}
-
-.marquee .marquee-jjj:hover {
-  -webkit-animation-play-state: paused;
-  -moz-animation-play-state: paused;
-  -o-animation-play-state: paused;
-  animation-play-state: paused;
-  cursor: pointer;
-}
-
-/* Make it move */
-
-@keyframes marquee {
-  0% {
-    transform: translate(0, 0);
-  }
-  100% {
-    transform: translate(-100%, 0);
-  }
 }
