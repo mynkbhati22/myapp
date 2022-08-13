@@ -17,7 +17,7 @@ export default function SetState() {
           <button className="p-3 mx-3" onClick={() => Decrement()}>
             -
           </button>
-          <span className={count <=0 ?"color-count" :"text-success fs-2"} id={ count===0 ?"count-number" : ""} >{count}</span>
+          <span className={count <=0 ?"color-count" :"text-success fs-2"} id={ count===0 ?"count" : ""} >{count}</span>
           <button className="p-3 mx-3" onClick={() => Increment()}>
             +
           </button>
