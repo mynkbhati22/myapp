@@ -13,18 +13,18 @@ import Contact from "./components/Contact";
 export default function App() {
   return (
     <div>
-   <Router>
-   <Navbar />
-   <Features />
-      {/* <Main />
-      <State />
-      <SetState />
-      <RegistrationForm/> */}
-      {/* <Revision/> */}
-      <Routes>
-        <Route path="/contact" element={<Contact />} />
-      </Routes>
-   </Router>
+      <Router>
+        <Navbar />
+        <Features />
+        <Main />
+        <State />
+        <SetState />
+        <RegistrationForm />
+        <Revision />
+        <Routes>
+          <Route path="/contact" element={<Contact />} />
+        </Routes>
+      </Router>
     </div>
   );
 }
