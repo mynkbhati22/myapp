@@ -1,6 +1,8 @@
 import React from "react";
+import { useNavigate } from "react-router-dom";
 
 export default function Navbar() {
+  const navigate = useNavigate();
   return (
     <div>
       <nav className="navbar navbar-expand-lg navbar-light bg-light">
@@ -27,7 +29,7 @@ export default function Navbar() {
                 </a>
               </li>
               <li className="nav-item">
-                <a className="nav-link" href=" /">
+                <a className="nav-link" onClick={() => navigate("/contact")} target="_blank">  
                   Features
                 </a>
               </li>
