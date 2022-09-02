@@ -1,13 +1,11 @@
 import React from "react";
-import { useNavigate } from "react-router-dom";
 
 export default function Navbar() {
-  const navigate = useNavigate();
   return (
     <div>
-      <nav className="navbar navbar-expand-lg navbar-light bg-light">
-        <div className="container-fluid">
-          <a className="navbar-brand" href=" /">
+      <nav className="navbar navbar-expand-lg navbar-light bg-transparent">
+        <div className="container">
+          <a className="navbar-brand" href="#">
             Navbar
           </a>
           <button
@@ -22,30 +20,20 @@ export default function Navbar() {
             <span className="navbar-toggler-icon"></span>
           </button>
           <div className="collapse navbar-collapse" id="navbarNav">
-            <ul className="navbar-nav">
+            <ul className="navbar-nav ms-auto">
               <li className="nav-item">
-                <a className="nav-link active" aria-current="page" href=" /">
+                <a className="nav-link active" aria-current="page" href="#">
                   Home
                 </a>
               </li>
               <li className="nav-item">
-                <a className="nav-link" onClick={() => navigate("/contact")} target="_blank">  
-                  Features
+                <a href="#about" className="nav-link active">
+                  About
                 </a>
               </li>
               <li className="nav-item">
-                <a className="nav-link" href=" /">
-                  Pricing
-                </a>
-              </li>
-              <li className="nav-item">
-                <a
-                  className="nav-link disabled"
-                  href=" /"
-                  tabIndex="-1"
-                  aria-disabled="true"
-                >
-                  Disabled
+                <a className="nav-link active" href="#services">
+                  Services
                 </a>
               </li>
             </ul>

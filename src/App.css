@@ -5,3 +5,9 @@
 #count {
   color: #000;
 }
+
+.ewit-img {
+  display: block;
+  margin: auto;
+  width: 40%;
+}

@@ -9,13 +9,18 @@ import SetState from "./components/SetState";
 import State from "./components/State";
 import Features from "./components/Features";
 import Contact from "./components/Contact";
+import Home from "./components/pages/Home";
 
 export default function App() {
   return (
     <div>
       <Router>
         <Navbar />
-        <Features />
+
+        <Routes>
+          <Route exact path="/" element={<Home />} />
+        </Routes>
+        {/* <Features />
         <Main />
         <State />
         <SetState />
@@ -23,7 +28,7 @@ export default function App() {
         <Revision />
         <Routes>
           <Route path="/contact" element={<Contact />} />
-        </Routes>
+        </Routes> */}
       </Router>
     </div>
   );
