@@ -20,7 +20,7 @@ export default function App() {
         <Routes>
           <Route exact path="/" element={<Home />} />
         </Routes>
-        {/* <Features />
+        <Features />
         <Main />
         <State />
         <SetState />
@@ -28,7 +28,7 @@ export default function App() {
         <Revision />
         <Routes>
           <Route path="/contact" element={<Contact />} />
-        </Routes> */}
+        </Routes>
       </Router>
     </div>
   );
