@@ -10,25 +10,26 @@ import State from "./components/State";
 import Features from "./components/Features";
 import Contact from "./components/Contact";
 import Home from "./components/pages/Home";
+import Testpage from "./components/pages/Testpage";
 
 export default function App() {
   return (
     <div>
       <Router>
         <Navbar />
-
         <Routes>
           <Route exact path="/" element={<Home />} />
+          <Route path="/testing" element={<Testpage />} />
         </Routes>
-        <Features />
+        {/* <Features />
         <Main />
         <State />
         <SetState />
-        <RegistrationForm />
-        <Revision />
-        <Routes>
+        <RegistrationForm /> */}
+        {/* <Revision /> */}
+        {/* <Routes>
           <Route path="/contact" element={<Contact />} />
-        </Routes>
+        </Routes> */}
       </Router>
     </div>
   );
