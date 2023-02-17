@@ -4,6 +4,7 @@ import { BrowserRouter as Router, Routes, Route } from "react-router-dom";
 import Navbar from "./components/Navbar";
 import Home from "./components/pages/Home";
 import Testpage from "./components/pages/Testpage";
+import Web3 from "./components/pages/web3";
 
 export default function App() {
   let url = window.URL;
@@ -15,6 +16,7 @@ export default function App() {
         <Navbar />
         <Routes>
           <Route exact path="/" element={<Home url={url} />} />
+          <Route path="/web3" element={<Web3 />} />
           <Route
             path="/testing/:locationame"
             element={<Testpage url={url} />}
