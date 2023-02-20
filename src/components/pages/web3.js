@@ -23,26 +23,30 @@ export default function Web3({
           <img
             src="https://imgs.search.brave.com/ncwr7sjYuMV14G4QXjJJQYTTRPD03Agf_hOhXc4tGjA/rs:fit:1538:225:1/g:ce/aHR0cHM6Ly90c2Uz/Lm1tLmJpbmcubmV0/L3RoP2lkPU9JUC5h/R1dNVTFaXzNlTWlP/NzRodl9tZ2pBSGFD/UyZwaWQ9QXBp"
             alt="metamask-img"
+            onClick={() => MetamaskLogin()}
           />{" "}
           <img
             src="https://imgs.search.brave.com/ltJ--8X0WMI_EG_pcDLC-7c07vSM0kRj35GzCep8d6o/rs:fit:1200:675:1/g:ce/aHR0cHM6Ly9pMC53/cC5jb20vcG9seWdv/bnRpbWVzLmNvbS93/cC1jb250ZW50L3Vw/bG9hZHMvMjAyMS8w/Ny9waG90b18yMDIx/LTA3LTEzLTE2LjI3/LjI1LmpwZWc_Zml0/PTEyMDAlMkM2NzUm/c3NsPTE"
             alt="walletconnect-img"
+            onClick={() => WalletConnectLogin()}
           />
         </div>
-        <div className="container">
+        <div className="container d-flex">
           {account ? (
             <>
-              <p>
-                Your Wallet Address :{" "}
-                {account ? account : "0xxxx0000000000000000000000000000000000"}
-              </p>
-              <p>
-                Your Account Balance :{" "}
-                {account ? account : "0xxxx0000000000000000000000000000000000"}
-              </p>
+              <div className="">
+                <p>
+                  Your Wallet Address :{" "}
+                  {account
+                    ? account
+                    : "0xxxx0000000000000000000000000000000000"}{" "}
+                </p>
+
+                <button onClick={() => Disconnect()}>Disconnect</button>
+              </div>
             </>
           ) : (
-            "Connect WALLET WITH METAMASK"
+            "CONNECT YOUR WALLET WITH METAMASK OR WALLET CONNECT"
           )}
         </div>
       </div>
