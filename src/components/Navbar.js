@@ -1,4 +1,5 @@
 import React from "react";
+import { Link } from "react-router-dom";
 
 export default function Navbar() {
   return (
@@ -35,6 +36,11 @@ export default function Navbar() {
                 <a className="nav-link active" href="#services">
                   Services
                 </a>
+              </li>
+              <li className="nav-item">
+                <Link className="nav-link active" to="/web3">
+                  Web 3
+                </Link>
               </li>
             </ul>
           </div>
