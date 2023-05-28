@@ -16,3 +16,11 @@ img {
   width: 50%;
   cursor: pointer;
 }
+
+.justify-content-between {
+  justify-content: space-between !important;
+  border-bottom: 3px solid;
+}
+.input-text {
+  border-bottom: 3px solid;
+}

@@ -12,6 +12,13 @@ import {
   LoginWithMetamask,
   LoginWithWalletConnect,
 } from "./components/WEB3/web3connection";
+import RegistrationForm from "./components/RegistrationForm";
+import SetState from "./components/SetState";
+import State from "./components/State";
+import Features from "./components/Features";
+import Main from "./components/Main";
+import Revision from "./components/Revision";
+import Contact from "./components/Contact";
 
 export default function App() {
   let url = window.URL;
@@ -88,7 +95,7 @@ export default function App() {
         <Navbar />
         <Routes>
           <Route exact path="/" element={<Home url={url} />} />
-          <Route
+          {/* <Route
             path="/web3"
             element={
               <Web3
@@ -102,15 +109,15 @@ export default function App() {
           <Route
             path="/testing/:locationame"
             element={<Testpage url={url} />}
-          />
+          /> */}
         </Routes>
 
         {/* <Features />
         <Main />
-        <State />
+        <State /> */}
         <SetState />
-        <RegistrationForm /> */}
-        {/* <Revision /> */}
+        {/* <RegistrationForm />
+        <Revision /> */}
         {/* <Routes>
           <Route path="/contact" element={<Contact />} />
         </Routes> */}
